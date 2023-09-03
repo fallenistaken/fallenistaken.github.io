@@ -10,3 +10,21 @@ nav {
 .center {
     text-align: center;
 }
+a:link {
+    color: #3366CC;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #3366CC;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #3366CC;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #3366CC;
+  }

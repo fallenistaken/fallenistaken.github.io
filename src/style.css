@@ -7,67 +7,51 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu";
 }
 
 body {
-    background-color: lightblue;
-    font-family: "Ubuntu";
-}
-nav {
-    color: #3366CC;
+  min-height: 100vh;
+ 
 }
 
-li.nav, a, button {
-  font-family: "Ubuntu";
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+background: #e7e7e7;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #c7c7c7;
-  
-}
+.navbar a {
+position: relative;
+font-size: 18px;
+color: #000;
+font-weight: 500;
+text-decoration: none;
+margin-left: 40px;
+} 
 
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-}
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+} 
 
-.nav-links {
-  list-style: none;
+.navbar a:hover::before {
+  width: 100%;
 }
-
-.nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover{
-  color: #0088a9;
-}
-
-button {
-  padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  margin-left: 20px;
-}
-
-button:hover {
-  background-color: rgba(0,136,169,0.8 );
-}
+ 
 .center {
     text-align: center;
 }
@@ -80,22 +64,22 @@ button:hover {
   
 }
 
-a:link {
+div a:link {
     color: #3366CC;
   }
   
   /* visited link */
-  a:visited {
+  div a:visited {
     color: #3366CC;
   }
   
   /* mouse over link */
-  a:hover {
+  div a:hover {
     color: #3366CC;
   }
   
   /* selected link */
-  a:active {
+  div a:active {
     color: #3366CC;
   }
   

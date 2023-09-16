@@ -1,6 +1,6 @@
 @font-face{
   font-family: "Ubuntu";
-  src: url(fonts/Ubuntu-R.ttf) format("truetype");
+  src: url(/fonts/Ubuntu-R.ttf) format("truetype");
 }
 
 * {
@@ -17,7 +17,7 @@ nav {
     color: #3366CC;
 }
 
-li, a, button {
+li.nav, a, button {
   font-family: "Ubuntu";
   font-weight: 500;
   font-size: 16px;
@@ -32,7 +32,6 @@ header {
   background-color: #c7c7c7;
   
 }
-
 
 .logo {
   cursor: pointer;
@@ -72,6 +71,15 @@ button:hover {
 .center {
     text-align: center;
 }
+
+#contact {
+  position: fixed;     
+  text-align: center;    
+  bottom: 20px; 
+  width: 100%;
+  
+}
+
 a:link {
     color: #3366CC;
   }
@@ -90,3 +98,4 @@ a:link {
   a:active {
     color: #3366CC;
   }
+  
